@@ -12,5 +12,9 @@ export const resolvers = {
 
   Category: {
     products: (parent, args, context) => products.filter((product) => product.categoryID === parent.id)
+  },
+
+  Product: {
+    categories: (parent, args, context) => categories.filter((category) => category.id === parent.categoryID)
   }
 };

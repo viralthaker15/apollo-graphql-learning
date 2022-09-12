@@ -18,6 +18,8 @@ export const typeDefs = gql`
     price: Float!
     image: String!
     onSale: Boolean!
+    categoryID: ID!
+    categories: [Category!]!
   }
 
   type Category {
